@@ -1,0 +1,21 @@
+---
+import { Image } from 'astro:assets';
+import HerewegoalLogo from '../assets/logo/HerewegoalLogo.png';
+import Button from './Button.astro';
+const saasName = "Herewegoal";
+---
+
+<header class="shadow-md py-5 fixed top-0 left-0 w-full z-10">
+  <div class="container mx-auto flex justify-between items-center px-4">
+    <div class="flex items-center space-x-2">
+      <Image src={HerewegoalLogo} alt="Herewegoal Logo" class="w-8 h-auto mr-2"/>
+      <h1 class="text-2xl font-bold text-gray-800">{saasName}</h1>
+    </div>
+    <nav>
+      <ul class="flex justify-between items-center">
+        <li><a href="#features" class="text-[#011D3A]">Features</a></li>
+      </ul>
+    </nav>
+    <Button>Join Waiting List</Button>
+  </div>
+</header>
