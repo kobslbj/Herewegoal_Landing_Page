@@ -1,10 +1,8 @@
 ---
-// Component Imports
 import Hero from '../components/Sections/Hero.astro';
 import Feature from '../components/Sections/Feature.astro';
 import Header from '../components/Header.astro';
-// Full Astro Component Syntax:
-// https://docs.astro.build/basics/astro-components/
+import WaitingList from '../components/Sections/WaitingList.astro';
 ---
 
 <html lang="en">
@@ -16,11 +14,14 @@ import Header from '../components/Header.astro';
 		<title>Herewegoal</title>
 	</head>
 
-	<body>
+	<body class="bg-gradient-to-b from-blue-50 via-white to-blue-50 scroll-smooth pb-16">
 		<Header />
-		<div class="container mx-auto">
+		<div class="container mx-auto flex flex-col items-center justify-center">
 			<Hero />
 			<Feature />
+			<WaitingList />
 		</div>
+		<script async src="https://prod-waitlist-widget.s3.us-east-2.amazonaws.com/getwaitlist.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="https://prod-waitlist-widget.s3.us-east-2.amazonaws.com/getwaitlist.min.css"/>
 	</body>
 </html>
