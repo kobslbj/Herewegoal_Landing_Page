@@ -1,11 +1,18 @@
 ---
 import Container from '../../shared/Container.astro'
+import { Image } from 'astro:assets';
+import HerewegoalLogo from '../../assets/logo/HerewegoalLogo.png';
 ---
-<Container id="waiting-list" className="flex flex-col items-center justify-center min-h-screen">
+<Container id="waiting-list" className="flex flex-col items-center justify-center py-20" data-aos="fade-up">
+    <div class="flex items-center justify-center gap-3 mb-4 md:mb-0 animate-bounce">
+        <Image src={HerewegoalLogo} alt="Herewegoal Logo" class="w-6 sm:w-10 h-auto"/>
+    </div>
     <div class="text-center">
-        <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-            Join the waiting list
+        <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl animate-fade-in">
+            Join waiting list
         </p>
     </div>
-    <div class="flex justify-center align-center" id="getWaitlistContainer" data-waitlist_id="22684" data-widget_type="WIDGET_1"></div>
+    <div class="flex justify-center align-center animate-fade-in" id="getWaitlistContainer" data-waitlist_id="22684" data-widget_type="WIDGET_1"></div>
 </Container>
+
+
