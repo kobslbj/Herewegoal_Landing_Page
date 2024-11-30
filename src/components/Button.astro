@@ -1,13 +1,18 @@
 ---
-// Click button, get confetti!
-// Styled by Tailwind :)
----
+interface Props {
+	href?: string
+}
 
-<button
-	class="appearance-none py-2 px-4 bg-[#011D3A] text-white font-semibold rounded-lg shadow-md  focus:outline-none focus:ring-2  focus:ring-opacity-75"
+const { href } = Astro.props
+---
+<a href={href}>
+<button 
+    
+	class="hidden md:block appearance-none py-2 px-4 bg-[#011D3A] text-white font-semibold rounded-lg shadow-md  focus:outline-none focus:ring-2  focus:ring-opacity-75"
 >
 	<slot />
 </button>
+</a>
 
 <script>
 	import confetti from 'canvas-confetti';
