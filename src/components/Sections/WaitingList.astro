@@ -3,7 +3,7 @@ import Container from '../../shared/Container.astro'
 import { Image } from 'astro:assets';
 import HerewegoalLogo from '../../assets/logo/HerewegoalLogo.png';
 ---
-<section id="waiting-list" class="flex flex-col items-center justify-center py-20" data-aos="fade-up">
+<Container id="waiting-list" className="flex flex-col items-center justify-center py-20" data-aos="fade-up">
     <div class="flex items-center justify-center gap-3 mb-4 md:mb-0 animate-bounce">
         <Image src={HerewegoalLogo} alt="Herewegoal Logo" class="w-6 sm:w-10 h-auto"/>
     </div>
@@ -13,6 +13,6 @@ import HerewegoalLogo from '../../assets/logo/HerewegoalLogo.png';
         </p>
     </div>
     <div class="flex justify-center align-center animate-fade-in" id="getWaitlistContainer" data-waitlist_id="22684" data-widget_type="WIDGET_1"></div>
-</section>
+</Container>
 
 
