@@ -16,16 +16,13 @@ import Footer from '../components/Sections/Footer.astro';
 		<meta name="description" content="Herewegoal is a simple project management tool that allows you to manage your projects and collaborate with your team without login."/>
 	</head>
 
-	<body class="bg-gradient-to-b from-blue-100 via-blue-50 to-white scroll-smooth">
+	<body class="bg-[#121212] scroll-smooth shadow-lg">
 		<Header />
 		<div class="container mx-auto flex flex-col items-center justify-center">
 			<Hero />
 			<Feature />
-			<WaitingList />
 		</div>
-		<script async src="https://prod-waitlist-widget.s3.us-east-2.amazonaws.com/getwaitlist.min.js"></script>
 		<script src="../js/main.js"></script>
-		<link rel="stylesheet" type="text/css" href="https://prod-waitlist-widget.s3.us-east-2.amazonaws.com/getwaitlist.min.css"/>
 	</body>
 	<footer>
 		<Footer />

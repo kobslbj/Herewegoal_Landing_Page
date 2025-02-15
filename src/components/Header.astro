@@ -9,14 +9,14 @@ const saasName = "Herewegoal";
   <div class="container mx-auto flex justify-between items-center px-4">
     <div class="flex items-center space-x-2">
       <Image src={HerewegoalLogo} alt="Herewegoal Logo" class="w-8 h-auto mr-2"/>
-      <h1 class="text-2xl font-bold text-gray-800">{saasName}</h1>
+      <h1 class="text-2xl font-bold text-white">{saasName}</h1>
     </div>
     <nav class="hidden md:flex">
-      <ul class="flex justify-between items-center space-x-4">
-        <li><a href="#features" class="text-[#011D3A]">Features</a></li>
+      <ul class="flex justify-between items-center gap-10">
+        <li><a href="#features" class="text-white">Features</a></li>
+        <li><a href="#pricing" class="text-white">Pricing</a></li>
       </ul>
     </nav>
-    <Button href={"#waiting-list"}>Join Waiting List</Button>
   </div>
 </header>
 
@@ -25,9 +25,9 @@ const saasName = "Herewegoal";
     window.addEventListener('scroll', () => {
       const header = document.getElementById('main-header');
       if (header && window.scrollY > 0) {
-        header?.classList.add('shadow-md', 'bg-white', 'bg-opacity-90');
+        header?.classList.add('shadow-md', 'bg-[#121212]', 'border-b', 'border-gray-800', 'border-opacity-50' );
       } else {
-        header?.classList.remove('shadow-md', 'bg-white', 'bg-opacity-90');
+        header?.classList.remove('shadow-md', 'bg-[#121212]', 'border-b', 'border-gray-800', 'border-opacity-50');
       }
     });
   }
